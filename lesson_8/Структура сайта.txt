@@ -1,0 +1,188 @@
+* свободная тема, на выбор
+
+Обязательные требования:
+
+    MVC
+    Админ-панель
+    База данных, миграции, модели, связи
+    Соответствие современным стандартам разработки
+
+
+1. "Великие дома Вестероса"
+
+Models->Article
+
+controllers->SiteController
+
+миграция createNewsTable
+
+views->site->main - вывод информации
+
+http://yii2.local/index.php?r=site%2Fmain
+
+2. "Сериал"
+Models->Series
+
+controllers->SiteController
+
+миграция createSeriesTable
+
+
+views->site->series - вывод информации
+
+http://yii2.local/index.php?r=site%2Fseries
+
+3. "Персонажи"
+
+Models->Personage, Rubric
+
+controllers->SiteController
+
+миграция createPersonageTable
+
+views->site->personage - вывод информации
+
+связи: персонажи с рубриками
+
+http://yii2.local/index.php?r=site%2Fpersonal
+
+4. "История"
+
+Models->History, Author
+
+controllers->SiteController
+
+миграция createHistoryTable
+
+views->site->history - вывод информации
+
+связи: история с авторами
+
+http://yii2.local/index.php?r=site%2Fhistory
+
+
+
+Админ-панель:
+// вывести записи в категории "Великие дома Вестероса"
+
+
+http://yii2.local/index.php?r=admin%2Fmain
+
+
+Models->Article
+
+controllers->AdminController
+
+views->layouts->admin
+
+views->admin->main
+
+
+
+// добавить информацию в категорию "Великие дома Вестероса"
+
+
+controllers->AdminController
+
+views->admin->add
+
+
+// обновить информацию в категории "Великие дома Вестероса"
+
+controllers->AdminController
+
+view->admin->update
+
+// удалить информацию в категории "Великие дома Вестероса"
+
+
+controllers->AdminController
+
+
+// вывести информацию о "Сериале"
+
+
+http://yii2.local/index.php?r=admin%2Fseries
+
+
+Models->Series
+
+controllers->AdminController
+
+views->layouts->admin
+
+views->admin->series
+
+// добавить информацию в категорию "Сериал"
+
+controllers->AdminController
+
+view->admin->addseries
+
+
+// обновить информацию в категории "Сериал"
+
+controllers->AdminController
+
+view->admin->updateseries
+
+
+// удалить информацию в категории "Сериал"
+
+controllers->AdminController
+
+// вывести информацию о "Персонажах"
+
+Models->Personage
+
+controllers->AdminController
+
+views->layouts->admin
+
+views->admin->personage
+
+// добавить информацию в категорию "Персонажи"
+
+controllers->AdminController
+
+view->admin->addpersonage
+
+// обновить информацию в категорию "Персонажи"
+
+controllers->AdminController
+
+view->admin->updatepersonage
+
+
+// удалить информацию в категории "Персонажи"
+
+controllers->AdminController
+
+
+// вывести информацию об "Истории"
+
+Models->History
+
+controllers->AdminController
+
+views->layouts->admin
+
+views->admin->history
+
+// добавить информацию в категорию "История"
+
+controllers->AdminController
+
+view->admin->addhistory
+
+// обновить информацию в категорию "История"
+
+controllers->AdminController
+
+view->admin->updatehistory
+
+
+// удалить информацию в категории "История"
+
+controllers->AdminController
+
